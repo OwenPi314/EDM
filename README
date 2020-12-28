@@ -1,0 +1,9 @@
+AutoRecorder
+
+The auto recorder starts a audio recording when you start talking
+and ends recording when you stop talking.
+
+Issue:
+1. The recording seems to be stopping prematurely;
+2. setup() seems to be called when you stop talking for a long time
+   after talking for a while.
