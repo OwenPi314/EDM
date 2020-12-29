@@ -3,7 +3,25 @@ AutoRecorder
 The auto recorder starts a audio recording when you start talking
 and ends recording when you stop talking.
 
-Issue:
-1. The recording seems to be stopping prematurely;
-2. setup() seems to be called when you stop talking for a long time
-   after talking for a while.
+Components:
+  - Arduino Uno
+  - SD card              (to store the recordings)
+  - SD card adapter
+  - Analog audio sensor  (for recording)
+  - Digital audio sensor (for checking whether there is sound)
+
+How it works:
+  - It constantly checks for input to the digital sensor, once sound
+    is detected, recording starts using the analog sensor
+  - When no sound has been detected for a whole second, the recording
+    stops and waits for the person to start talking again
+
+  - The recorded audio files are stored on an SD card
+  - The files are named in the format "naudio.wav" where n is the
+    number of recordings before this one
+
+Possible improvements:
+1. There could be better settings for how long to wait before deciding
+   that there is no sound
+   - Perhaps a better setting can be obtained though machine learning?
+   - Perhaps more testing?
