@@ -20,8 +20,14 @@ How it works:
   - The files are named in the format "naudio.wav" where n is the
     number of recordings before this one
 
+Usage:
+  - Start to use it throughout the day
+  - When finished, use the files in the SD card for analysis
+  - When done with the analysis, remove all files on the SD card
+
 Possible improvements:
 1. There could be better settings for how long to wait before deciding
    that there is no sound
    - Perhaps a better setting can be obtained though machine learning?
    - Perhaps more testing?
+2. The recording misses the beginning of the recording by a little bit
