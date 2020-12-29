@@ -31,6 +31,7 @@ void setup()
   }
   audio.CSPin = SD_ChipSelectPin;
 
+
   //Wait for setup (maybe unnecessary)
   delay(1000);
 }
