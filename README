@@ -1,3 +1,45 @@
+EDM (Emotion Detecting Mask)
+The EDM has two major components, an autorecorder and an emotion classifier.
+The autorecorder will be installed on the mask, whenever the user
+speaks, the recorder will recorder the user speaking and store it on
+an SD card.
+Then, the stored speech is fed into the emotion classifier which then 
+determines what emotions the user is experiencing when saying a particular
+sentence. This data, after analysis, can be used for a better
+awareness and mindfulness of the emotions that have been experienced
+throughout the day so that the user can better reflect and manage
+themselves.
+
+Known Issues: 
+  - the audio quality from the auto-recorder is significantly
+    worse than the audio clips from the datasets, this could mean
+    that the model generated from the datasets won't perform well
+     - Possible solution:
+       - Look into noise cancelling algorithms
+       - Buy better components for the recorder [x because I'm poor]
+       - Buy a recorder instead of building one [x because I'm poor]
+
+----------------------------------------------------------------------------
+
+Emotion Classifier
+
+The emotion classifier aims to classify audio clips of human speech
+into emotions.
+
+Dataset(s) used:
+  - "The Ryerson Audio-Visual Database of Emotional 
+     Speech and Song (RAVDESS)" by Livingstone & Russo is 
+     licensed under CC BY-NA-SC 4.0.
+
+Features implemented:
+Emotion intensity, speaker gender, Fourier Transform of entire
+audio clips, [NEXT UP] Spectrogram, Mel Spectrogram, MFCC
+
+Models implemented:
+K-Nearest Neighbors, [NEXT UP] TBD.
+
+----------------------------------------------------------------------------
+
 AutoRecorder
 
 The auto recorder starts a audio recording when you start talking
