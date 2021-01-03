@@ -18,7 +18,13 @@ Known Issues:
        - Look into noise cancelling algorithms
        - Buy better components for the recorder [x because I'm poor]
        - Buy a recorder instead of building one [x because I'm poor]
-
+  - Format of the input vs. dataset: 1. Since the input only contains
+    one sentence, I need to find a way so that the recorded input
+    contain one sentence each.
+     - Possible solution:
+       - Apply another machine learning model to determine the start
+         and end of a sentence before sending it into the emotion
+         classifier
 ----------------------------------------------------------------------------
 
 Emotion Classifier
@@ -33,7 +39,7 @@ Dataset(s) used:
 
 Features implemented:
 Emotion intensity, speaker gender, Fourier Transform of entire
-audio clips, [NEXT UP] Spectrogram, Mel Spectrogram, MFCC
+audio clips, Spectrogram, [NEXT UP] Mel Spectrogram, MFCC
 
 Models implemented:
 K-Nearest Neighbors, [NEXT UP] TBD.
