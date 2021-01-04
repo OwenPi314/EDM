@@ -40,10 +40,14 @@ Dataset(s) used:
 Features implemented:
 Emotion intensity, speaker gender, Fourier Transform of entire
 audio clips, Spectrogram, [NEXT UP] Mel Spectrogram, MFCC
+  [NOTE] FFT of entire audio clips have slightly worse performance than
+         spectrograms.
 
 Models implemented:
 K-Nearest Neighbors, [NEXT UP] TBD.
 
+[NOTE] For features with high dimensionality, PCA is applied to improve
+       performance.
 ----------------------------------------------------------------------------
 
 AutoRecorder
