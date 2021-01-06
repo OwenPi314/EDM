@@ -46,6 +46,9 @@ audio clips, Spectrogram, [NEXT UP] MFCC
 Models implemented:
 K-Nearest Neighbors, [NEXT UP] Generative Gaussian Model.
 
+[NOTE] Using FFT features + PCA + KNN and splitting the data based on
+       gender showed some improvement, so it could be a good idea
+       to keep the data seperate from now on.
 [NOTE] For features with high dimensionality, PCA is applied to improve
        performance.
 ----------------------------------------------------------------------------
